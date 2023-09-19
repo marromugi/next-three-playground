@@ -1,8 +1,8 @@
 import { useMemo } from 'react'
 import { useFrame } from 'react-three-fiber'
 import * as THREE from 'three'
-import vertexShader from '@/consts/shaders/particleNoise/vert'
-import fragmentShader from '@/consts/shaders/particleNoise/frag'
+import vertexShader from 'src/shaders/particleNoise/vert'
+import fragmentShader from 'src/shaders/particleNoise/frag'
 
 export const Particles = () => {
   const planePositions = useMemo(() => {

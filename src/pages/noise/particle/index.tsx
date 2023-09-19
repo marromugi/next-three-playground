@@ -1,14 +1,14 @@
 import { Canvas } from '@react-three/fiber'
-import { Particles } from '@/components/partical'
+import { Particles } from '@/src/components/partical'
 import dynamic from 'next/dynamic'
 
 export const Page = () => {
   // エラーになるため、ダイナミックインポートする
   const NextOrbitControls = dynamic(
-    () => import('@/components/drie/orbitControls'),
+    () => import('@/src/components/drie/orbitControls'),
     { ssr: false }
   )
-  const NextStats = dynamic(() => import('@/components/drie/stats'), {
+  const NextStats = dynamic(() => import('@/src/components/drie/stats'), {
     ssr: false,
   })
   return (
